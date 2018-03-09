@@ -6,16 +6,24 @@
 </ion-header>
 
 
-<ion-content padding>
-  <div text-center>
+<ion-content >
+  <div>
     <img src="{{pauta.image}}">
+  </div>
+  <div padding>
+  <div text-center>
+    
   <h4>{{pauta.name}}</h4>
+  <p align="justify">
   {{pauta.description}}<br>
-  Custo do Evento:{{pauta.price}}<br>
-  Data de Inicio:{{pauta.date_start}}<br>
-  Hora de Inicio:{{pauta.hour_start}}<br>
-  Data de Fim:{{pauta.date_end}}<br>
-  Hora de Fim:{{pauta.hour_end}}<br>
-  Endereço:{{pauta.location}}<br>
+  <br>
+  <strong>Custo do Evento: </strong>{{pauta.price}}<br>
+  <strong>Data de Inicio: </strong>{{pauta.date_start}}<br>
+  <strong>Hora de Inicio: </strong>{{pauta.hour_start}}<br>
+  <strong>Data de Fim: </strong>{{pauta.date_end}}<br>
+  <strong>Hora de Fim: </strong>{{pauta.hour_end}}<br>
+  <strong>Endereço: </strong>{{pauta.location}}<br>
+  </p>
+</div>
 </div>
 </ion-content>
