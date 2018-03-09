@@ -1,3 +1,4 @@
+import { PlaceDeilPageModule } from './../pages/place-deil/place-deil.module';
 import { EventoDeilPageModule } from './../pages/evento-deil/evento-deil.module';
 import { EventoProvider } from './../providers/evento/evento';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,7 +30,8 @@ import { MapaPageModule } from '../pages/mapa/mapa.module';
     FeaturedPageModule,
     PlacePageModule,
     MapaPageModule,
-    EventoDeilPageModule
+    EventoDeilPageModule,
+    PlaceDeilPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

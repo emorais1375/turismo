@@ -1,0 +1,30 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>PlaceDeil</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div>
+        <img src="{{place.image}}">
+      </div>
+      <div padding>
+      <div text-center>
+        
+      <h4>{{place.name}}</h4>
+      <p align="justify">
+      {{place.description}}<br>
+      <br>
+      <strong>Data de Inicio: </strong>{{place.week_start}}<br>
+      <strong>Hora de Inicio: </strong>{{place.week_end}}<br>
+      <strong>Data de Fim: </strong>{{place.hour_start}}<br>
+      <strong>Hora de Fim: </strong>{{place.hour_end}}<br>
+      <strong>Telefone: </strong>{{place.phone}}<br>
+      <strong>Endereço: </strong>{{place.location}}<br>
+      </p>
+    </div>
+    </div>
+</ion-content>
