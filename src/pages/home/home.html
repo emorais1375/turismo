@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Cultural Amazonas</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <!-- Agenda Cultural -->
+  <ion-card>
+    <ion-card-header (click)="openAgenda()">AGENDA CULTURAL</ion-card-header>
+    <ion-grid>
+      <ion-row>
+        <ion-col (click)="openDescricao()">
+          <div style="width: 100%; height: 70px ;background-color: #DAD0ED;"></div>
+          <div class="card-hour">10:00 - 21:00</div>
+          <div class="card-category">Exposição</div>
+        </ion-col>
+        <ion-col (click)="openDescricao()">
+          <div style="width: 100%; height: 70px ;background-color: #DAD0ED;"></div>
+          <div class="card-hour">10:00 - 21:00</div>
+          <div class="card-category">Exposição</div>
+        </ion-col>
+        <ion-col (click)="openDescricao()">
+          <div style="width: 100%; height: 70px ;background-color: #DAD0ED;"></div>
+          <div class="card-hour">10:00 - 21:00</div>
+          <div class="card-category">Exposição</div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!-- Destaque -->
+  <ion-card (click)="openDestaque()">
+    <ion-card-header>DESTAQUE</ion-card-header>
+    <ion-card-content>
+      <div style="width: 100%; height: 70px ;background-color: #DAD0ED;"></div>
+      <div class="card-destaque" style="text-align: center;">Temporada Literária</div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+
+      <!-- Descubra -->
+      <ion-col>
+        <ion-card (click)="openDescubra()" style="background-color:rebeccapurple;">
+          <ion-card-header style="color:white">DESCUBRA</ion-card-header>
+          <img style="height: 100px" src="assets/imgs/home-descubra.png" />
+        </ion-card>
+      </ion-col>
+
+      <!-- Espaços -->
+      <ion-col>
+        <ion-card (click)="openEspacos()" style="background-color:#DAD0ED;">
+          <ion-card-header>ESPAÇOS</ion-card-header>
+          <div style="width: 100%; height: 100px ;"></div>
+          <!-- <ion-img style="height: 100px" src="assets/imgs/event04.jpg"></ion-img> -->
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div text-center>
+    <img src="{{pauta.image}}">
+  <h4>{{pauta.name}}</h4>
+  {{pauta.description}}<br>
+  Custo do Evento:{{pauta.price}}<br>
+  Data de Inicio:{{pauta.date_start}}<br>
+  Hora de Inicio:{{pauta.hour_start}}<br>
+  Data de Fim:{{pauta.date_end}}<br>
+  Hora de Fim:{{pauta.hour_end}}<br>
+  Endereço:{{pauta.location}}<br>
+</div>
+</ion-content>
