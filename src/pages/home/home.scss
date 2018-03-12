@@ -5,13 +5,19 @@ page-home {
 
     .des{
         background-color: rebeccapurple;
+        
     }
-
+    
     .esp{
         background-color: #DAD0ED;
     }
+    
+    .col > img {
+        width: auto;
+        height: auto;
+    }
 
-    .descard{
-        
+    .card-hour{
+        display: absolute;
     }
 }
