@@ -1,17 +1,20 @@
 import { DescubraPage } from './../descubra/descubra';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 import { ListPage } from '../list/list';
 import { PlacePage } from '../place/place';
 import { MapaPage } from '../mapa/mapa';
 import { FeaturedPage } from '../featured/featured';
 import { EventoDeilPage } from '../evento-deil/evento-deil';
+import { EventoProvider } from '../../providers/evento/evento';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  pautas: any[];
+  page: number;
   slides = [
     {
       title: "Welcome to the Docs!",
@@ -32,13 +35,40 @@ export class HomePage {
   public list_event = new Array<any>();
   public list = new Array<any>();
   datas: any = [];
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, private eventoProvider: EventoProvider, private toast: ToastController) {
     for (let index = 0; index < 10; index++) {
       this.datas.push(index);
     }
   }
 
   ionViewDidLoad() {
+    this.pautas = [];
+    this.page = 1;
+    this.getAllPautas(this.page);
+  }
+
+  getAllPautas(page: number) {
+    this.eventoProvider.getAllPautas(page)
+      .then((result: any) => {
+        for (let index = 0; index < result.length; index++) {
+          const element = result[index];
+          this.pautas.push(element);
+          if (index == 2) break;
+        }
+      })
+      .catch((error: any) => {
+        this.toast.create({ message: 'Erro ao listar os eventos. Erro: ' + error.error, position: 'botton', duration: 3000 }).present();
+      });
+  }
+
+  openPauta(id: number) {
+    this.eventoProvider.getPauta(id)
+      .then((result: any) => {
+        this.navCtrl.push(EventoDeilPage, { pauta: result });
+      })
+      .catch((error: any) => {
+        this.toast.create({ message: 'Erro ao recuperar o evento. Erro: ' + error.error, position: 'botton', duration: 3000 }).present();
+      });
   }
 
   openAgenda() {
