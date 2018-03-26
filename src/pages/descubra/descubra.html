@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Descubra</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <button ion-item *ngFor="let item of items_list" (click)="itemSelected(item)">
+          {{ item.name }}
+        </button>  
+      </ion-list>
+      <button ion-button block color="danger" (click)="doCheckbox()">Show Checkbox Alert</button>
+</ion-content>
