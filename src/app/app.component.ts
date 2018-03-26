@@ -1,3 +1,4 @@
+import { DescubraPage } from './../pages/descubra/descubra';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -27,7 +28,7 @@ export class MyApp {
       { title: 'Home', component: HomePage, icon: 'home' },
       { title: 'Agenda', component: ListPage, icon: 'bookmarks' },
       { title: 'Destaque', component: FeaturedPage, icon: 'paper' },
-      { title: 'Descubra', component: MapaPage, icon: 'eye' },
+      { title: 'Descubra', component: DescubraPage, icon: 'eye' },
       { title: 'Espaços', component: PlacePage, icon: 'map' }
     ];
 

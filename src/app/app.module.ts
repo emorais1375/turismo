@@ -1,3 +1,4 @@
+import { DescubraPageModule } from './../pages/descubra/descubra.module';
 import { PlaceDeilPageModule } from './../pages/place-deil/place-deil.module';
 import { EventoDeilPageModule } from './../pages/evento-deil/evento-deil.module';
 import { EventoProvider } from './../providers/evento/evento';
@@ -17,6 +18,10 @@ import { FeaturedPageModule } from '../pages/featured/featured.module';
 import { PlacePageModule } from '../pages/place/place.module';
 import { MapaPageModule } from '../pages/mapa/mapa.module';
 
+import { GoogleMaps } from '@ionic-native/google-maps';
+import { Geolocation } from '@ionic-native/geolocation';
+import { LaunchNavigator } from '@ionic-native/launch-navigator'
+
 @NgModule({
   declarations: [
     MyApp,
@@ -31,7 +36,8 @@ import { MapaPageModule } from '../pages/mapa/mapa.module';
     PlacePageModule,
     MapaPageModule,
     EventoDeilPageModule,
-    PlaceDeilPageModule
+    PlaceDeilPageModule,
+    DescubraPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -42,6 +48,9 @@ import { MapaPageModule } from '../pages/mapa/mapa.module';
   providers: [
     StatusBar,
     SplashScreen,
+    GoogleMaps,
+    Geolocation,
+    LaunchNavigator,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     EventoProvider
   ]
