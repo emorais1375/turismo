@@ -1,18 +1,35 @@
 page-home {
+    .card{
+        border-radius: 12px;
+    }
     .card-header {
         font-weight:  bold;
+        padding: 0px 12px;
     }
-
+    .rowbottom .card{
+        height: 90%;
+    }
     .des{
         background-color: rebeccapurple;
     }
-
-    .esp{
-        background-color: #DAD0ED;
+    .des .card-header{
+        color:white;
     }
-
-    .descard{
-        
+    .esp .card-header{
+        position: absolute;
+    }
+    .esp img{
+        height: 100%;
+        width: 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    .card-hour {
+        font-size: 1.0rem;
+    }
+    .destaque img{
+        border-radius: 10px;
     }
     .toolbar-background {
         background: #fff;
