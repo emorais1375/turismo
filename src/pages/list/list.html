@@ -13,10 +13,13 @@
     <button ion-item *ngFor="let pauta of pautas" (click)="openPauta(pauta.id)">
       <i class="icon ion-location"></i>
       <h3>{{pauta.name}}</h3>
-      <ion-badge item-end>{{ pauta.price === '0,00' ? 'Gratuito' : pauta.price }}</ion-badge>
+      <!-- <ion-badge item-end>{{ pauta.price === '0,00' ? 'Gratuito' : pauta.price }}</ion-badge> -->
       <ion-note item-start>
         <h6>{{pauta.hour_start}}
           <br>{{pauta.hour_end}}</h6>
+      </ion-note>
+      <ion-note item-end>
+        <div [ngStyle]="{'background-color': pauta.price === '0,00' ? 'green' : 'red'} "></div>
       </ion-note>
     </button>
   </ion-list>
