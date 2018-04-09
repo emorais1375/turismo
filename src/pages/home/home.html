@@ -1,56 +1,54 @@
-<ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+<ion-content>
+  
+  <ion-toolbar>
+      <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Cultural</ion-title>
-  </ion-navbar>
-</ion-header>
+      <ion-buttons end>
+      <button ion-button icon-only (click)='openAgenda()'>
+        <ion-icon>AGENDA CULTURAL</ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-slides pager loop speed=400 autoplay=6500 
+      (ionSlideAutoplayStop)="onSlideStart()">
 
+    <ion-slide (click)='openDescricao(0)'>
+      <p>13:00 - 14:00</p>
+      <h2>Debate</h2>
+      <img src="assets/img/n01.png">
+    </ion-slide>
 
-<ion-content>
-  <!-- Agenda Cultural -->
-  <ion-card>
-    <ion-card-header (click)="openAgenda()">AGENDA CULTURAL</ion-card-header>
-    <ion-grid>
-      <ion-row>
-        <ion-col *ngFor="let pauta of pautas" (click)="openPauta(pauta.id)" style="width:100%;height:auto;">
-          <ion-img  style="max-width:100%; max-height: 100%;" [src]="pauta.images.fanart"></ion-img>
-          <div class="card-hour">{{pauta.hour_start}} - {{pauta.hour_end}}</div>
-          <div class="card-category">{{pauta.type}}</div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-card>
+    <ion-slide (click)='openDescricao(1)'>
+      <p>13:00 - 14:00</p>
+      <h2>Debate</h2>
+      <img src="assets/img/n02.png">
+    </ion-slide>
 
-  <!-- Destaque -->
-  <ion-card (click)="openDestaque()" class="destaque">
-    <ion-card-header>DESTAQUE</ion-card-header>
-    <ion-card-content>
-      <ion-img src='http://www.cultura.am.gov.br/conteudo/uploads/2014/01/CCPA.png'></ion-img>
-    </ion-card-content>
-  </ion-card>
+    <ion-slide (click)='openDescricao(2)'>
+      <p>13:00 - 14:00</p>
+      <h2>Debate</h2>
+      <img src="assets/img/n03.png">
+    </ion-slide>
 
-  <ion-grid no-padding>
-    <ion-row class="rowbottom">
+    <ion-slide (click)='openDescricao(3)'>
+      <p>13:00 - 14:00</p>
+      <h2>Debate</h2>
+      <img src="assets/img/n04.png">
+    </ion-slide>
 
-      <!-- Descubra -->
-      <ion-col>
-        <ion-card (click)="openDescubra()" class="des">
-          <ion-card-header>DESCUBRA</ion-card-header>
-          <img src="assets/imgs/home-descubra.png" />
-        </ion-card>
-      </ion-col>
+  </ion-slides>
 
-      <!-- Espaços -->
-      <ion-col>
-        <ion-card (click)="openEspacos()" class="esp">
-          <ion-card-header>ESPAÇOS</ion-card-header>
-          <img src="assets/imgs/home-espacos.jpg" />
-        </ion-card>
-      </ion-col>
+  <div class='Rectangle-3' (click)='openDestaque()'>
+    <h1 class='Temporada-Literria'>Temporada Literária</h1>
+  </div>
 
-    </ion-row>
-  </ion-grid>
+  <div class='Sombra-Padro' (click)='openEspacos()'><h2>Espaços</h2></div>
+
+  <ion-fab right bottom>
+    <button ion-fab color='primary2' (click)='openDescubra()'>
+      <ion-icon name='md-eye'></ion-icon>
+    </button>
+  </ion-fab>
 
 </ion-content>

@@ -24,3 +24,13 @@ ion-content.content.content-ios.content-ios-primary {
 .content{
     background-color: color($colors, fundo);
 } */
+
+@font-face {
+	font-family: Arvo;
+	src: url('../assets/fonts/arvo.woff2');
+}
+
+@font-face {
+	font-family: Archivo;
+	src: url('../assets/fonts/archivo.woff2');
+}
