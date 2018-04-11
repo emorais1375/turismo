@@ -1,18 +1,19 @@
-<ion-header>
-  <ion-navbar>
+<ion-content>
+
+  <ion-toolbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Descubra</ion-title>
-  </ion-navbar>
-</ion-header>
-
-
-<ion-content>
-    <ion-list>
-        <button ion-item *ngFor="let item of items_list" (click)="itemSelected(item)">
-          {{ item.name }}
-        </button>  
-      </ion-list>
-      <button ion-button block color="danger" (click)="doCheckbox()">Show Checkbox Alert</button>
+    <ion-title>Seu itinerário</ion-title>
+  </ion-toolbar>
+  <ion-list no-lines>
+    <ion-item *ngFor="let place of items">
+      <p>13:00 - 14:00</p>
+      <h2>Debate</h2>
+      <button class="bt1"><ion-icon name='md-checkmark'></ion-icon></button>
+      <button class="bt2"><ion-icon name='md-close'></ion-icon></button>
+      <img src="assets/img/n01.png">
+    </ion-item>
+  </ion-list>
+    
 </ion-content>

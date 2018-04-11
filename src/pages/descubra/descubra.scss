@@ -1,3 +1,72 @@
 page-descubra {
-
+	ion-icon {
+		color: white;
+	}
+	.toolbar {
+		position: fixed;
+	}
+	.toolbar-background {
+		background: transparent;
+	}
+	.toolbar-title {
+		color: white;
+	}
+	ion-list {
+	}
+	.list {
+		margin: 0;
+	}
+	.item {
+		border: 1px solid green;
+		position: relative;
+		margin: 0;
+		padding: 0;
+	}
+	.label {
+		margin: 0;
+	}
+	.item.item-block .item-inner {
+		padding-right: 0px;
+	}
+	.item h2 {
+		margin: 0;
+		font-family: Archivo;
+		font-size: 1.5rem;
+		font-weight: bold;
+		color: white;
+		position: absolute;
+		left: 6.1%;
+		bottom: 9.8%;
+	}
+	.item p {
+		margin: 0;
+		font-family: Archivo;
+		font-size: 0.875rem;
+		font-weight: bold;
+		color: white;
+		position: absolute;
+		bottom: 18.7%;
+		left: 6.4%;
+	}
+	img {		
+		border: 1px solid #f00;
+	}
+	button {
+    position: absolute;
+    bottom: 13.1%;
+    font-size: 2.4rem;
+    background: transparent;
+	}
+	.bt2 {
+    right: 6.8%;
+	}
+	.bt1 {
+    right: 16.8%;
+	}
+	ion-icon.icon.icon.ion-md-checkmark.item-icon {
+		color: green;
+	}
+	ion-icon.icon.icon.ion-md-close.item-icon {
+		color: red;
+	}
 }
