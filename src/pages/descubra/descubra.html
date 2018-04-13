@@ -6,13 +6,13 @@
     </button>
     <ion-title>Seu itinerário</ion-title>
   </ion-toolbar>
-  <ion-list no-lines>
+  <ion-list no-lines aproxItemHeight="0px">
     <ion-item *ngFor="let place of items">
-      <p>13:00 - 14:00</p>
-      <h2>Debate</h2>
-      <button class="bt1"><ion-icon name='md-checkmark'></ion-icon></button>
-      <button class="bt2"><ion-icon name='md-close'></ion-icon></button>
-      <img src="assets/img/n01.png">
+      <p (click)='itemSelected2(place)'>Até as 14:00</p>
+      <h2 (click)='itemSelected2(place)'>{{place.name}}</h2>
+      <button class="bt1" (click)='hidePlace(place)'><ion-icon name='md-checkmark'></ion-icon></button>
+      <button class="bt2" (click)='hidePlace(place)'><ion-icon name='md-close'></ion-icon></button>
+      <img src="assets/img/n01.png" (click)='itemSelected2(place)'>
     </ion-item>
   </ion-list>
     

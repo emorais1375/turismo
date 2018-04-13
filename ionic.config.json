@@ -1,6 +1,6 @@
 {
   "name": "turismo",
-  "app_id": "",
+  "app_id": "c3143c37",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

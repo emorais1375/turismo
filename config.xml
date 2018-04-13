@@ -95,4 +95,5 @@
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBIto2pA6KHZcsAK-Yvc1MIhW11Ur2Gjxw" />
     </plugin>
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="^4.1.5" />
+    <allow-navigation href="http://192.168.0.245:8100" />
 </widget>
