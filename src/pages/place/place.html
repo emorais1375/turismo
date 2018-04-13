@@ -10,14 +10,14 @@
 
 <ion-content>
     <ion-list>
-        <button ion-item *ngFor="let place of places" (click)="openPlace(place.id)">
+        <button ion-item *ngFor="let place of places2" (click)='openPlace(place)'>
           <i class="icon ion-location"></i>
           <h3>{{place.name}}</h3>
         </button>
       </ion-list>
     
-      <ion-infinite-scroll (ionInfinite)="getPlaces($event)">
+      <!-- <ion-infinite-scroll (ionInfinite)="getPlaces($event)">
         <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Aguarde...">
         </ion-infinite-scroll-content>
-      </ion-infinite-scroll>
+      </ion-infinite-scroll> -->
 </ion-content>
