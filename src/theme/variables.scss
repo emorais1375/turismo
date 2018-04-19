@@ -39,7 +39,7 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  primary2:   #de1f26
+  primary2:   #dd4124
 );
 
 
@@ -72,7 +72,7 @@ $colors: (
 // default are overridden.
 
 @import "ionic.theme.default";
-
+$toolbar-background:  color($colors, primary2);
 
 // Ionicons
 // --------------------------------------------------
