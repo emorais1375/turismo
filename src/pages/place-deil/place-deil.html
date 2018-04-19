@@ -9,19 +9,23 @@
 
 <ion-content>
     <div>
-        <img src="assets/img/e01.png">
+        <img [src]="place.image">
       </div>
       <div padding>
       <div text-center>
         
       <h4>{{place.name}}</h4>
       <p align="justify">
-      {{place.description}}<br>
+        Os parágrafos descritivos incluem detalhes que apelam para os cinco sentidos. O escritor precisa transmitir as informações com a melhor descrição possível para o leitor. Parágrafos descritivos são comumente usados em ficção e não-ficção, para aumentar a imersão do leitor na obra. Embora não haja uma regra absoluta para se escrever estes parágrafos, existem várias sugestões que podem ser de alguma ajuda. Continue lendo para saber mais sobre o assunto.<br>
       <br>
-      <strong>Data de Inicio: </strong>{{place.week_start}}<br>
-      <strong>Hora de Inicio: </strong>{{place.week_end}}<br>
-      <strong>Data de Fim: </strong>{{place.hour_start}}<br>
-      <strong>Hora de Fim: </strong>{{place.hour_end}}<br>
+      <strong>Segunda: </strong>{{place.dia.seg}}<br>
+      <strong>Terça: </strong>{{place.dia.ter}}<br>
+      <strong>Quarta: </strong>{{place.dia.qua}}<br>
+      <strong>Quinta: </strong>{{place.dia.qui}}<br>
+      <strong>Sexta: </strong>{{place.dia.sex}}<br>
+      <strong>Sábado: </strong>{{place.dia.sab}}<br>
+      <strong>Domingo: </strong>{{place.dia.dom}}<br>
+      <br>
       <strong>Telefone: </strong>{{place.phone}}<br>
       <strong>Endereço: </strong>{{place.location}}<br>
       </p>
