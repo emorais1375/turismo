@@ -1,6 +1,37 @@
 page-list {
-    .note div {
-            width: 8px;
-            height: 41px;
+    .bar-button ,
+    .toolbar-title {
+        color: white;
+    }
+    .content {
+        color: white;
+    }
+    .data {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        text-align: center;
+    }
+    .detalhe {
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+    }
+    .detalhe2 {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+    }
+    .scroll-content {
+        padding-top: 0 !important; 
+    }
+    h1, h2, h6 {
+        margin: 0;
+    }
+    h2 {
+        font-size: 2.0rem;
+    }
+    h6 {
+        font-size: 1.2rem;
     }
 }

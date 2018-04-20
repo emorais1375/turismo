@@ -1,19 +1,18 @@
-<ion-header>
-  <ion-navbar>
+<ion-header no-border>
+  <ion-navbar transparent>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Agenda</ion-title>
+    <!-- <ion-title>Agenda</ion-title> -->
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
+<ion-content fullscreen>
+  <!-- <ion-list>
     <ion-item-divider color="light">Thu 1 Mar</ion-item-divider>
     <button ion-item *ngFor="let pauta of pautas" (click)="openPauta(pauta.id)">
       <i class="icon ion-location"></i>
       <h3>{{pauta.name}}</h3>
-      <!-- <ion-badge item-end>{{ pauta.price === '0,00' ? 'Gratuito' : pauta.price }}</ion-badge> -->
       <ion-note item-start>
         <h6>{{pauta.hour_start}}
           <br>{{pauta.hour_end}}</h6>
@@ -27,5 +26,26 @@
   <ion-infinite-scroll (ionInfinite)="getPautas($event)">
     <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Aguarde...">
     </ion-infinite-scroll-content>
-  </ion-infinite-scroll>
+  </ion-infinite-scroll> -->
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col col-12>
+        <div class='data'><h2>Hoje</h2></div>
+        <div class='detalhe'>
+            <h6>13:00 - 14:00</h6><h2>Debate</h2>
+        </div>
+        <div style="background: url(assets/img/n01.png) no-repeat center /cover; height: 39.8vh;"></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-6 *ngFor="let pauta of pautas">
+        <div class='detalhe2'>
+          <h6>{{pauta.hour_start}} - {{pauta.hour_end}}</h6>
+          <h2>{{pauta.type}}</h2>
+        </div>
+        <div style="height: 20.2vh" [ngStyle]="{'background':'url('+pauta.image+') no-repeat center /cover'}" (click)='openPauta(pauta)'></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
