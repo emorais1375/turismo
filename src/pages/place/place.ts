@@ -26,7 +26,7 @@ export class PlacePage {
         "dom": "11:00-15:00"
       },
       "phone": "(92) 3232-4450",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2013/12/3564-960x600.jpg",
+      "image": "assets/img/p01.jpg",
       "location": "Av. 7 de Setembro – Centro",
       "coordinate": {
         "lat": -3.134911,
@@ -46,7 +46,7 @@ export class PlacePage {
         "dom": "11:00-15:00"
       },
       "phone": "(92) 3248-1844",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/130-76-960x601.jpg",
+      "image": "assets/img/p02.jpg",
       "location": "Av. Eduardo Ribeiro – Centro",
       "coordinate": {
         "lat": -3.129944,
@@ -66,7 +66,7 @@ export class PlacePage {
         "dom": "11:00-15:00"
       },
       "phone": "(92) 3633-3026",
-      "image": "http://www.amazonasemais.com.br/wp-content/uploads/2016/08/teatro-chamine.jpg",
+      "image": "assets/img/p03.jpg",
       "location": "Av. Manaus Moderna – Centro",
       "coordinate": {
         "lat": -3.138693,
@@ -86,7 +86,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 2125-5300",
-      "image": "https://media-cdn.tripadvisor.com/media/photo-s/0c/19/ef/5e/centro-cultural-dos-povos.jpg",
+      "image": "assets/img/p04.jpg",
       "location": "Av. Silves Nº 2.222 – Distrito Industrial I",
       "coordinate": {
         "lat": -3.132935,
@@ -106,7 +106,7 @@ export class PlacePage {
         "dom": "09:00-14:00"
       },
       "phone": "(92) 3631-6047",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/04/01-1-Palacete-Provincial-960x750.jpg",
+      "image": "assets/img/p05.jpg",
       "location": "Praça Heliodoro Balbi – Centro",
       "coordinate": {
         "lat": -3.135523,
@@ -126,7 +126,7 @@ export class PlacePage {
         "dom": "09:00-14:00"
       },
       "phone": "(92) 3631-2938",
-      "image": "http://s2.glbimg.com/_ufS-s85Wf54FdIJS7oWXaiZ1ZM=/620x465/s.glbimg.com/jo/g1/f/original/2017/03/17/museu_casa_eduardo_ribeiro.jpg",
+      "image": "assets/img/p06.jpg",
       "location": "Rua José Clemente, 322 – Centro",
       "coordinate": {
         "lat": -3.130682,
@@ -146,7 +146,7 @@ export class PlacePage {
         "dom": "08:00-16:00"
       },
       "phone": "(92) 3658-6159",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/msvp3-960x750.jpg",
+      "image": "assets/img/p07.jpg",
       "location": "Igarapé São João – Afluente do Igarapé do Tarumã Mirim (Zona Rural)",
       "coordinate": {
         "lat": -3.009984,
@@ -166,7 +166,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 2125-5323",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/394800_479558758747397_1332127696_n-960x750.jpg",
+      "image": "assets/img/p08.jpg",
       "location": "Av. Silves Nº 2.222 – DISTRITO INDUSTRIAL I - Praça Pereira da Silva",
       "coordinate": {
         "lat": -3.132931,
@@ -186,7 +186,7 @@ export class PlacePage {
         "dom": "13:00-19:00"
       },
       "phone": "(92) 3631-4786",
-      "image": "http://s2.glbimg.com/nfbyNwMuYGdjAPzHg0P9D8QyAd8=/620x465/s.glbimg.com/jo/g1/f/original/2015/12/18/apadmtwhnmqpjtwourpbebjalz1glhnsuuzyxppybt2p.jpg",
+      "image": "assets/img/p09.jpg",
       "location": "Largo de São Sebastião",
       "coordinate": {
         "lat": -3.130009,
@@ -206,7 +206,7 @@ export class PlacePage {
         "dom": "15:00-21:00"
       },
       "phone": "(92) 3631-6227",
-      "image": "http://s2.glbimg.com/fI4a83PvDNGb_PNOXM_TproRi6s=/0x0:1700x1065/984x0/smart/filters:strip_icc()/s.glbimg.com/jo/g1/f/original/2014/10/17/foto_16.jpg",
+      "image": "assets/img/p10.jpg",
       "location": "Largo de São Sebastião",
       "coordinate": {
         "lat": -3.061842,
@@ -226,7 +226,7 @@ export class PlacePage {
         "dom": "09:00-14:00"
       },
       "phone": "(92) 3232-1768",
-      "image": "http://amazonasatual.com.br/wp-content/uploads/2017/04/Teatro-Amazonas-by-Valmir-Lima.jpg",
+      "image": "assets/img/p11.jpg",
       "location": "Av. Eduardo Ribeiro, Largo de São Sebastião",
       "coordinate": {
         "lat": -3.130031,
@@ -246,7 +246,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 3234-0588",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/biblioteca-publica-960x600.jpg",
+      "image": "assets/img/p12.jpg",
       "location": "Rua Barroso, 57 - Centro Histórico",
       "coordinate": {
         "lat": -3.134292,
@@ -266,7 +266,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 3622-0869",
-      "image": "http://3.bp.blogspot.com/-CLr16Yu0N4U/UnQtJ_MorII/AAAAAAAAL1U/hmMHPZ7hyt4/s1600/biblioteca+braille+manaus+(1).JPG",
+      "image": "assets/img/p13.jpg",
       "location": "Av. Pedro Teixeira, 2565 - Bloco C Sambódromo",
       "coordinate": {
         "lat": -3.085066,
@@ -286,7 +286,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 2523-5317",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2016/10/DSC_8416-960x600.jpg",
+      "image": "assets/img/p14.jpg",
       "location": "Av. Silves, 2.222 - Distrito Industrial, Bola da Suframa",
       "coordinate": {
         "lat": -3.132759,
@@ -306,7 +306,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 2125-5328",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2017/11/biblioteca-mario-ypiranga.jpeg",
+      "image": "assets/img/p15.jpg",
       "location": "Av. Silves Nº 2.222 – Distrito Industrial I, antiga Bola da Suframa, situada dentro do Centro Cultural dos Povos da Amazônia.",
       "coordinate": {
         "lat": -3.132738,
@@ -326,7 +326,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 3234-0588",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/thalia_phedra-960x600.jpg",
+      "image": "assets/img/p16.jpg",
       "location": "Av. Sete de Setembro S/N – Centro Cultural Palácio Rio Branco- Centro Histórico",
       "coordinate": {
         "lat": -3.132427,
@@ -346,7 +346,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 3249-1098",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/biblioteca-genesino-braga-960x600.jpg",
+      "image": "assets/img/p17.jpg",
       "location": "Av. Autaz Mirím, 6250 – Shopping Grande Circular – São José II – Cep 69,085-000 – Manaus – Am – Brasil",
       "coordinate": {
         "lat": -3.0620629,
@@ -366,7 +366,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 3633-7955",
-      "image": "http://3.bp.blogspot.com/-7PRlV1xb02g/VS8ai8yli2I/AAAAAAAASzc/Vi_QCDoGj20/s1600/biblioteca%2B(12).JPG",
+      "image": "assets/img/p18.jpg",
       "location": "Rua da Instalação, 70 – centro – CEP: 69010-200 – Manaus/Amazonas",
       "coordinate": {
         "lat": -3.135008,
@@ -386,7 +386,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92) 3233 6058",
-      "image": "http://www.cultura.am.gov.br/conteudo/uploads/2014/03/biblioteca-de-artes-960x600.jpg",
+      "image": "assets/img/p19.jpg",
       "location": "Av. Pedro Teixeira, 2565, no Liceu de Artes e Ofícios Cláudio Santoro, Bloco E, dentro do Sambódromo.",
       "coordinate": {
         "lat": -3.084222,
@@ -406,7 +406,7 @@ export class PlacePage {
         "dom": "Fechado"
       },
       "phone": "(92)3533-6241 ",
-      "image": "http://2.bp.blogspot.com/-k_9FeysnfPM/UdF1cNcbPiI/AAAAAAAAEMo/xYzQehEOaks/s1600/Bumbodromo-de-Parintins-AM_CHICO-BATATA-AGECOM_4.jpg",
+      "image": "assets/img/p20.jpg",
       "location": "Av. Nações Unidas, s/n - Centro, Parintins - AM, 69151-060",
       "coordinate": {
         "lat": -2.62548,

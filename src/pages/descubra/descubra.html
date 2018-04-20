@@ -12,7 +12,7 @@
       <h2 (click)='itemSelected2(place)'>{{place.name}}</h2>
       <button class="bt1" (click)='hidePlace(place)'><ion-icon name='md-checkmark'></ion-icon></button>
       <button class="bt2" (click)='hidePlace(place)'><ion-icon name='md-close'></ion-icon></button>
-      <div style="background:url(assets/img/n01.png) no-repeat center /cover; height: 40vh" (click)='itemSelected2(place)'></div>
+      <div style="height: 40vh" [ngStyle]="{'background':'url(' + place.image +') center /cover'}" (click)='itemSelected2(place)'></div>
     </ion-item>
   </ion-list>
     
