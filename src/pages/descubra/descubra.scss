@@ -1,6 +1,7 @@
 page-descubra {
 	ion-icon {
 		color: white;
+		text-shadow: black 0.1em 0.1em 0.2em;
 	}
 	.toolbar {
 		position: fixed;
@@ -8,10 +9,10 @@ page-descubra {
 	.toolbar-background {
 		background: transparent;
 	}
+	.bar-button,
 	.toolbar-title {
 		color: white;
-	}
-	ion-list {
+		text-shadow: black 0.1em 0.1em 0.2em;
 	}
 	.list {
 		margin: 0;
@@ -34,6 +35,7 @@ page-descubra {
 		font-size: 1.5rem;
 		font-weight: bold;
 		color: white;
+		text-shadow: black 0.1em 0.1em 0.2em;
 		position: absolute;
 		left: 6.1%;
 		bottom: 9.8%;
@@ -41,9 +43,10 @@ page-descubra {
 	.item p {
 		margin: 0;
 		font-family: Archivo;
-		font-size: 0.875rem;
+		font-size: 1.3rem;
 		font-weight: bold;
 		color: white;
+		text-shadow: black 0.1em 0.1em 0.2em;
 		position: absolute;
 		bottom: 18.7%;
 		left: 6.4%;

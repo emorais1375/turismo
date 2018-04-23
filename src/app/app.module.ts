@@ -1,6 +1,5 @@
 import { PlaceDeilPageModule } from './../pages/place-deil/place-deil.module';
 import { EventoDeilPageModule } from './../pages/evento-deil/evento-deil.module';
-import { EventoProvider } from './../providers/evento/evento';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -22,6 +21,7 @@ import { GoogleMaps } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LaunchNavigator } from '@ionic-native/launch-navigator'
 import { LocationsProvider } from '../providers/locations/locations';
+import { PautasProvider } from '../providers/pautas/pautas';
 
 @NgModule({
   declarations: [
@@ -54,7 +54,7 @@ import { LocationsProvider } from '../providers/locations/locations';
     Geolocation,
     LaunchNavigator,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    EventoProvider,
+    PautasProvider,
     LocationsProvider
   ]
 })

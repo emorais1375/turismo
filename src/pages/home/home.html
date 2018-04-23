@@ -1,15 +1,16 @@
-<ion-content>
-  
-  <ion-toolbar>
-      <button ion-button menuToggle>
+<ion-header no-border>
+  <ion-navbar transparent>
+    <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-      <ion-buttons end>
-      <button ion-button icon-only (click)='openAgenda()'>
-        <ion-icon>AGENDA CULTURAL</ion-icon>
-      </button>
-    </ion-buttons>
-  </ion-toolbar>
+    <ion-buttons end>
+        <button ion-button icon-only (click)='openAgenda()'>
+          <ion-icon>AGENDA CULTURAL</ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content fullscreen>
   <ion-slides pager loop speed=400 autoplay=6500 
       (ionSlideAutoplayStop)="onSlideStart()">
 

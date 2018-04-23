@@ -12,8 +12,8 @@
     <ion-item *ngFor="let place of locations">
       <p (click)='itemSelected(place)'>{{place.distance}} km</p>
       <h2 (click)='itemSelected(place)'>{{place.name}}</h2>
-      <button class="bt1" (click)='hidePlace(place)'><ion-icon name='md-checkmark'></ion-icon></button>
-      <button class="bt2" (click)='hidePlace(place)'><ion-icon name='md-close'></ion-icon></button>
+      <!-- <button class="bt1" (click)='hidePlace(place)'><ion-icon name='md-checkmark'></ion-icon></button>
+      <button class="bt2" (click)='hidePlace(place)'><ion-icon name='md-close'></ion-icon></button> -->
       <div style="height: 40vh" [ngStyle]="{'background':'url(' + place.image +') center /cover'}" (click)='itemSelected(place)'></div>
     </ion-item>
   </ion-list>
