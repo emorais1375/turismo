@@ -18,9 +18,9 @@ page-featured {
         left: 5%;
     }
     .detalhe2 {
-        position: absolute;
-        bottom: 5%;
-        left: 5%;
+        position: relative;
+        //bottom: 5%;
+        //left: 5%;
     }
     .scroll-content {
         padding-top: 0 !important; 
@@ -29,9 +29,18 @@ page-featured {
         margin: 0;
     }
     h2 {
+        position: absolute;
         font-size: 2.0rem;
+        top: 9%;
+        right: 5%;
     }
     h6 {
+        position: absolute;
         font-size: 1.2rem;
+        top: 19%;
+        right: 5%;
+    }
+    img {
+        margin: 0 auto -4px;
     }
 }

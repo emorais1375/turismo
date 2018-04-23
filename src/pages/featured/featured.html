@@ -1,17 +1,17 @@
 <ion-header no-border>
-  <ion-navbar transparent>
+  <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <!-- <ion-title>Literária</ion-title> -->
+    <ion-title>Temporada</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content fullscreen>
+<ion-content>
   <ion-grid no-padding>
-    <ion-row>
+    <!-- <ion-row>
       <ion-col col-12>
         <div class='data'><h2>Hoje</h2></div>
         <div class='detalhe'>
@@ -19,14 +19,15 @@
         </div>
         <div style="background: url(assets/img/n01.png) no-repeat center /cover; height: 39.8vh;"></div>
       </ion-col>
-    </ion-row>
+    </ion-row> -->
     <ion-row>
-      <ion-col col-6 *ngFor="let pauta of pautas">
+      <ion-col col-12 *ngFor="let pauta of pautas">
         <div class='detalhe2'>
+          <img src='assets/img/01.jpeg'/>
           <h6>13:00 - 14:00</h6>
-          <h2>Debate</h2>
+          <h2>Dessana, Dessana</h2>
         </div>
-        <div style="height: 20.2vh" [ngStyle]="{'background':'url('+pauta.image+') no-repeat center /cover'}" (click)='openPauta(pauta)'></div>
+        <!-- <div style="height: 20.2vh" [ngStyle]="{'background':'url('+pauta.image+') no-repeat center /cover'}" (click)='openPauta(pauta)'></div> -->
       </ion-col>
     </ion-row>
   </ion-grid>
