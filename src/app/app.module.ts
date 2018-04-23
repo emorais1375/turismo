@@ -1,4 +1,3 @@
-import { DescubraPageModule } from './../pages/descubra/descubra.module';
 import { PlaceDeilPageModule } from './../pages/place-deil/place-deil.module';
 import { EventoDeilPageModule } from './../pages/evento-deil/evento-deil.module';
 import { EventoProvider } from './../providers/evento/evento';
@@ -9,6 +8,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { DescubraPage } from '../pages/descubra/descubra';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,12 +21,14 @@ import { MapaPageModule } from '../pages/mapa/mapa.module';
 import { GoogleMaps } from '@ionic-native/google-maps';
 import { Geolocation } from '@ionic-native/geolocation';
 import { LaunchNavigator } from '@ionic-native/launch-navigator'
+import { LocationsProvider } from '../providers/locations/locations';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    DescubraPage
   ],
   imports: [
     BrowserModule,
@@ -36,14 +38,14 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator'
     PlacePageModule,
     MapaPageModule,
     EventoDeilPageModule,
-    PlaceDeilPageModule,
-    DescubraPageModule
+    PlaceDeilPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    DescubraPage
   ],
   providers: [
     StatusBar,
@@ -52,7 +54,8 @@ import { LaunchNavigator } from '@ionic-native/launch-navigator'
     Geolocation,
     LaunchNavigator,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    EventoProvider
+    EventoProvider,
+    LocationsProvider
   ]
 })
 export class AppModule {}

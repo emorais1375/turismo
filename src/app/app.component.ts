@@ -1,4 +1,3 @@
-import { DescubraPage } from './../pages/descubra/descubra';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -6,8 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { DescubraPage } from './../pages/descubra/descubra';
 import { FeaturedPage } from '../pages/featured/featured';
-import { MapaPage } from '../pages/mapa/mapa';
 import { PlacePage } from '../pages/place/place';
 
 @Component({
