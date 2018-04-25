@@ -22,6 +22,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { LaunchNavigator } from '@ionic-native/launch-navigator'
 import { LocationsProvider } from '../providers/locations/locations';
 import { PautasProvider } from '../providers/pautas/pautas';
+import { TemporadasProvider } from '../providers/temporadas/temporadas';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { PautasProvider } from '../providers/pautas/pautas';
     LaunchNavigator,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PautasProvider,
-    LocationsProvider
+    LocationsProvider,
+    TemporadasProvider
   ]
 })
 export class AppModule {}

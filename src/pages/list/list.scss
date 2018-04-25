@@ -4,53 +4,30 @@ page-list {
         color: white;
 		text-shadow: black 0.1em 0.1em 0.2em;
     }
-    .content {
-        color: white;
-    }
-    .data {
-        position: absolute;
-        top: 5%;
-        width: 100%;
-        text-align: center;
-    }
-    .detalhe {
-        position: absolute;
-        bottom: 10%;
-        left: 5%;
-    }
-    .detalhe2 {
+    div {
+        padding-top: 0 !important;
         position: relative;
-        //bottom: 5%;
-        //left: 5%;
-        
-        h2 {
-            position: absolute;
-            bottom: 5%;
-            left: 5%;
-            text-shadow: black 0.1em 0.1em 0.2em
-        }
-        h6 {
-            position: absolute;
-            bottom: 15%;
-            left: 5%;
-            text-shadow: black 0.1em 0.1em 0.2em
-        }
-    }
-
-    .scroll-content {
-        padding-top: 0 !important; 
-    }
-    h1, h2, h6 {
-        margin: 0;
     }
     h2 {
-        font-size: 2.0rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        position: absolute;
+        font-size: 1.7rem;
+        color: white;
+        bottom: 15%;
+        left: 5%;
     }
     h6 {
-        font-size: 1.3rem;
+        text-shadow: black 0.1em 0.1em 0.2em;
+        position: absolute;
+        font-size: 1.5rem;
+        color: white;
+        bottom: 5%;
+        left: 5%;
     }
     img {
-        margin: 0 auto -4px;
-        z-index:-1;
+        object-fit: cover;
+        display: block;
+        height: 40vh;
+        width: 100%;
     }
 }

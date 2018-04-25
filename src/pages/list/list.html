@@ -22,8 +22,8 @@
       <ion-col col-12 *ngFor="let pauta of pautas">
         <div class='detalhe2' (click)='openPauta(pauta)'>
           <img [src]='pauta.image'/>
-          <h6>{{pauta.hour_start}} - {{pauta.hour_end}}</h6>
-          <h2>Debate</h2>
+          <h6>{{pauta.type}} • {{pauta.hour_start}} - {{pauta.hour_end}}</h6>
+          <h2>{{pauta.name}}</h2>
         </div>
         <!-- <div style="height: 20.2vh" [ngStyle]="{'background':'url('+pauta.image+') no-repeat center /cover'}" (click)='openPauta(pauta)'></div> -->
       </ion-col>

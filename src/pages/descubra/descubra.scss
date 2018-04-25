@@ -18,9 +18,7 @@ page-descubra {
 		margin: 0;
 	}
 	.item {
-		border: 1px solid green;
 		position: relative;
-		margin: 0;
 		padding: 0;
 	}
 	.label {
@@ -30,29 +28,27 @@ page-descubra {
 		padding-right: 0px;
 	}
 	.item h2 {
-		margin: 0;
-		font-family: Archivo;
-		font-size: 1.5rem;
-		font-weight: bold;
-		color: white;
 		text-shadow: black 0.1em 0.1em 0.2em;
-		position: absolute;
-		left: 6.1%;
-		bottom: 9.8%;
+        position: absolute;
+        font-size: 2.0rem;
+        color: white;
+        bottom: 5%;
+        left: 5%;
 	}
-	.item p {
-		margin: 0;
-		font-family: Archivo;
-		font-size: 1.3rem;
-		font-weight: bold;
-		color: white;
+	.item h6 {
 		text-shadow: black 0.1em 0.1em 0.2em;
-		position: absolute;
-		bottom: 18.7%;
-		left: 6.4%;
+        position: absolute;
+        font-size: 1.5rem;
+        color: white;
+        bottom: 15%;
+        left: 5%;
 	}
 	img {		
 		/*border: 1px solid #f00;*/
+		object-fit: cover;
+		display: block;
+		height: 40vh;
+		width: 100%;
 	}
 	button {
     position: absolute;

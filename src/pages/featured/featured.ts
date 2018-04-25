@@ -1,16 +1,17 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { EventoDeilPage } from '../evento-deil/evento-deil';
+import { TemporadasProvider } from './../../providers/temporadas/temporadas';
 
 @Component({
   selector: 'page-featured',
   templateUrl: 'featured.html',
 })
 export class FeaturedPage {
-  pautas: any[];
+  pautas: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.pautas = [
+  constructor(public navCtrl: NavController, private temporadasProvider: TemporadasProvider) {
+    /* this.pautas = [
       {
         "id": 1,
         "name": "EXPOSIÇÃO “CARNAVAL – A MAIOR FESTA POPULAR DO BRASIL”",
@@ -310,11 +311,15 @@ export class FeaturedPage {
           "banner": "http://image.tmdb.org/t/p/w500/9kkkuO9u0ZdTA1hzbNR5Nf2mtkO.jpg"
         }
       }
-    ];
+    ]; */
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad FeaturedPage');
+  ionViewDidLoad(){
+    let pautasLoaded = this.temporadasProvider.load();
+
+    Promise.all([pautasLoaded]).then((result) => {
+      this.pautas = result[0];
+    });
   }
 
   openPauta(pauta){

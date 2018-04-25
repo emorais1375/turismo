@@ -32,7 +32,6 @@
     "cordova-plugin-device": "^2.0.1",
     "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-geolocation": "^4.0.1",
-    "cordova-plugin-googlemaps": "^2.2.5",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.16",
     "cordova-plugin-whitelist": "^1.3.3",
@@ -41,7 +40,8 @@
     "rxjs": "5.5.2",
     "sw-toolbox": "3.6.0",
     "uk.co.workingedge.phonegap.plugin.launchnavigator": "^4.1.5",
-    "zone.js": "0.8.18"
+    "zone.js": "0.8.18",
+    "cordova-plugin-splashscreen": "^5.0.2"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.1.8",
@@ -50,11 +50,6 @@
   "description": "An Ionic project",
   "cordova": {
     "plugins": {
-      "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROIOID": "AIzaSyBK7GgyTnJYkVQIxxLGvdGGwSLApUImnLU",
-        "API_KEY_FOR_IOS": "AIzaSyBK7GgyTnJYkVQIxxLGvdGGwSLApUImnLU",
-        "API_KEY_FOR_ANDROID": "AIzaSyBIto2pA6KHZcsAK-Yvc1MIhW11Ur2Gjxw"
-      },
       "cordova-plugin-whitelist": {},
       "cordova-plugin-device": {},
       "cordova-plugin-ionic-webview": {},
@@ -62,7 +57,8 @@
       "cordova-plugin-geolocation": {
         "GEOLOCATION_USAGE_DESCRIPTION": "To locate you"
       },
-      "uk.co.workingedge.phonegap.plugin.launchnavigator": {}
+      "uk.co.workingedge.phonegap.plugin.launchnavigator": {},
+      "cordova-plugin-splashscreen": {}
     },
     "platforms": [
       "android"

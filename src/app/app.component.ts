@@ -26,7 +26,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage, icon: 'home' },
       { title: 'Agenda', component: ListPage, icon: 'bookmarks' },
-      { title: 'Destaque', component: FeaturedPage, icon: 'paper' },
+      { title: 'Temporada', component: FeaturedPage, icon: 'paper' },
       { title: 'Descubra', component: DescubraPage, icon: 'eye' },
       { title: 'Espaços', component: PlacePage, icon: 'map' }
     ];

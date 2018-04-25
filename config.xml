@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MyApp</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+<widget id="br.gov.am.cultura.culturaamazonas" version="3.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Cultura Amazonas</name>
+    <description>Cultura: lugar de todos.</description>
+    <author email="gerenciati.sec@gmail.com" href="http://www.cultura.am.gov.br/suporte-cultura-am/">Cultura Team</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -81,7 +81,6 @@
     <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.1">
         <variable name="GEOLOCATION_USAGE_DESCRIPTION" value="AIzaSyBK7GgyTnJYkVQIxxLGvdGGwSLApUImnLU" />
     </plugin>
@@ -89,11 +88,7 @@
     <allow-navigation href="http://192.168.0.170:8100" />
     <allow-navigation href="http://192.168.0.228:8100" />
     <allow-navigation href="http://10.42.0.1:8100" />
-    <plugin name="cordova-plugin-googlemaps" spec="^2.2.5">
-        <variable name="API_KEY_FOR_ANDROIOID" value="AIzaSyBK7GgyTnJYkVQIxxLGvdGGwSLApUImnLU" />
-        <variable name="API_KEY_FOR_IOS" value="AIzaSyBK7GgyTnJYkVQIxxLGvdGGwSLApUImnLU" />
-        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyBIto2pA6KHZcsAK-Yvc1MIhW11Ur2Gjxw" />
-    </plugin>
     <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="^4.1.5" />
     <allow-navigation href="http://192.168.0.245:8100" />
+    <engine name="android" spec="7.0.0" />
 </widget>
