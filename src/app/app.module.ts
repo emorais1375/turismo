@@ -1,3 +1,4 @@
+import { EleitoralPage } from './../pages/eleitoral/eleitoral';
 import { PlaceDeilPageModule } from './../pages/place-deil/place-deil.module';
 import { EventoDeilPageModule } from './../pages/evento-deil/evento-deil.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -29,7 +30,8 @@ import { TemporadasProvider } from '../providers/temporadas/temporadas';
     MyApp,
     HomePage,
     ListPage,
-    DescubraPage
+    DescubraPage,
+    EleitoralPage
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,8 @@ import { TemporadasProvider } from '../providers/temporadas/temporadas';
     MyApp,
     HomePage,
     ListPage,
-    DescubraPage
+    DescubraPage,
+    EleitoralPage
   ],
   providers: [
     StatusBar,
